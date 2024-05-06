@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 1</title>
+  <style>
+    .cajas div {
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    #cajaRojo {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+    }
+
+    #cajaVerde {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+    }
+
+    #cajaAzul {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="cajas">
+    <div id="cajaRojo"></div>
+    <div id="cajaVerde"></div>
+    <div id="cajaAzul"></div>
+
+    <script>
+      const rojo = document.getElementById('#cajarojo');
+      const verde = document.getElementById('#cajaverde');
+      const azul = document.getElementById('#cajaazul');
+
+      cajaRojo.addEventListener('click', function() {
+        document.body.style.backgroundColor = 'red';
+      })
+
+      cajaVerde.addEventListener('click', function() {
+        document.body.style.backgroundColor = 'green';
+      })
+
+      cajaAzul.addEventListener('click', function() {
+        document.body.style.backgroundColor = 'blue';
+      })
+    </script>
+  </div>
+</body>
+</html>

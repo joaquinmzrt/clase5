@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 2</title>
+</head>
+<body>
+  <h2>Contador de caracteres</h2>
+  <textarea id="textArea"></textarea>
+  <p id="contador">0</p>
+
+  <script>
+    const textarea = document.getElementById('textarea')
+    const contador = document.getElementById('contador')
+
+    textArea.addEventListener ('input' , function() {
+      const cantidadCaracteres = textArea.value.length;
+      contador.textContent = cantidadCaracteres;
+    })
+  </script>
+</body>
+</html>
